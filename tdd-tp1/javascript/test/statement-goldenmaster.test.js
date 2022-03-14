@@ -52,5 +52,4 @@ test("Goldenmaster", () => {
 	});*/
 	const readedStatements = JSON.parse(fs.readFileSync('test/test.json', 'utf8'));
 	expect(JSON.stringify(s)).toMatch(JSON.stringify(readedStatements));
-
 });
