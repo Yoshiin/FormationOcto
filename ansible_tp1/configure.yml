@@ -1,0 +1,6 @@
+- hosts: webserver
+  tasks:
+  - name: Create app directory
+    ansible.builtin.file:
+      path: /root/app
+      state: directory

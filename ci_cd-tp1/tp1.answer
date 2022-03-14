@@ -1,0 +1,2 @@
+La dépendence entre les tests ?
+Je ne vois pas vraiment le désaventage si l'un n'a pas besoin de l'autre pour se lancer, et si le résultat global est bien bloquand (si un fail, le build fail).

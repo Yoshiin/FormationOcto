@@ -1,0 +1,2 @@
+ --request POST --url 'https://dev-mi1ybfv7.eu.auth0.com/oauth/token' --header 'content-type: application/x-www-form-urlencoded'  --data 'audience=https://test.fr&grant_type=client_credentials&client_id=7hS5gDOpNpm9y4T03SIi2Yuw3zi9OGoR&client_secret=-VGUapxPaHJXbHhwlDJWYZ9EmSotQvr5M9MzLLxaOnWqW2sJODCJ58WTHzuhELsL'
+

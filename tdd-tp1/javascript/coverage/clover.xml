@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1647256997108" clover="3.2.0">
+  <project timestamp="1647256997108" name="All files">
+    <metrics statements="26" coveredstatements="25" conditionals="9" coveredconditionals="8" methods="1" coveredmethods="1" elements="36" coveredelements="34" complexity="0" loc="26" ncloc="26" packages="1" files="1" classes="1"/>
+    <file name="statement.js" path="/home/yoshin/projects/Work/FabNum2022/formation/tdd-tp1/Theatrical-Players-Refactoring-Kata/javascript/src/statement.js">
+      <metrics statements="26" coveredstatements="25" conditionals="9" coveredconditionals="8" methods="1" coveredmethods="1"/>
+      <line num="3" count="100" type="stmt"/>
+      <line num="4" count="100" type="stmt"/>
+      <line num="5" count="100" type="stmt"/>
+      <line num="6" count="100" type="stmt"/>
+      <line num="10" count="100" type="stmt"/>
+      <line num="11" count="100" type="stmt"/>
+      <line num="12" count="100" type="stmt"/>
+      <line num="13" count="100" type="cond" truecount="2" falsecount="1"/>
+      <line num="15" count="51" type="stmt"/>
+      <line num="16" count="51" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="37" type="stmt"/>
+      <line num="19" count="51" type="stmt"/>
+      <line num="21" count="49" type="stmt"/>
+      <line num="22" count="49" type="cond" truecount="2" falsecount="0"/>
+      <line num="23" count="38" type="stmt"/>
+      <line num="25" count="49" type="stmt"/>
+      <line num="26" count="49" type="stmt"/>
+      <line num="28" count="0" type="stmt"/>
+      <line num="31" count="100" type="stmt"/>
+      <line num="33" count="100" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="100" type="stmt"/>
+      <line num="36" count="100" type="stmt"/>
+      <line num="38" count="100" type="stmt"/>
+      <line num="39" count="100" type="stmt"/>
+      <line num="40" count="100" type="stmt"/>
+      <line num="43" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
