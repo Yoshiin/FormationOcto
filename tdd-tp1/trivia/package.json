@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "dev": "jasmine-node ."
+  },
+  "dependencies": {
+    "jasmine-node": "^3.0.0"
+  }
+}
