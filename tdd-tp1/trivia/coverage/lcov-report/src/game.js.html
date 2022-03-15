@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/game.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../prettify.css" />
+    <link rel="stylesheet" href="../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../index.html">all files</a> / <a href="index.html">src/</a> game.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.98% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>106/114</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">82% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>41/50</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">90.91% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>10/11</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">92.98% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>106/114</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">41×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">220×</span>
+<span class="cline-any cline-yes">15×</span>
+<span class="cline-any cline-yes">205×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">200×</span>
+<span class="cline-any cline-yes">20×</span>
+<span class="cline-any cline-yes">180×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">175×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">175×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">175×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">175×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">175×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-yes">50×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">27×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">4×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">35×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">47×</span>
+<span class="cline-any cline-yes">47×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">47×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-yes">15×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-yes">39×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">44×</span>
+<span class="cline-any cline-yes">8×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">2×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">36×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-yes">1×</span>
+<span class="cline-any cline-yes">3×</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">exports = typeof window !== "undefined" &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >window !== null </span>? <span class="branch-0 cbranch-no" title="branch not covered" >window </span>: global;
+&nbsp;
+exports.Game = function() {
+  let players          = new Array();
+  let places           = new Array(6);
+  let purses           = new Array(6);
+  let inPenaltyBox     = new Array(6);
+&nbsp;
+  let popQuestions     = new Array();
+  let scienceQuestions = new Array();
+  let sportsQuestions  = new Array();
+  let rockQuestions    = new Array();
+&nbsp;
+  let currentPlayer    = 0;
+  let isGettingOutOfPenaltyBox = false;
+&nbsp;
+  let didPlayerWin = function(){
+    return !(purses[currentPlayer] == 6)
+  };
+&nbsp;
+  let currentCategory = function(){
+    if(places[currentPlayer] == 0)
+      return 'Pop';
+    if(places[currentPlayer] == 4)
+      return 'Pop';
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] == 8)
+<span class="cstat-no" title="statement not covered" >      return 'Pop';</span>
+    if(places[currentPlayer] == 1)
+      return 'Science';
+    if(places[currentPlayer] == 5)
+      return 'Science';
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] == 9)
+<span class="cstat-no" title="statement not covered" >      return 'Science';</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] == 2)
+<span class="cstat-no" title="statement not covered" >      return 'Sports';</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] == 6)
+<span class="cstat-no" title="statement not covered" >      return 'Sports';</span>
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] == 10)
+<span class="cstat-no" title="statement not covered" >      return 'Sports';</span>
+    return 'Rock';
+  };
+&nbsp;
+  this.createRockQuestion = function(index){
+    return "Rock Question "+index;
+  };
+&nbsp;
+  for(let i = 0; i &lt; 50; i++){
+    popQuestions.push("Pop Question "+i);
+    scienceQuestions.push("Science Question "+i);
+    sportsQuestions.push("Sports Question "+i);
+    rockQuestions.push(this.createRockQuestion(i));
+  };
+&nbsp;
+  this.isPlayable = <span class="fstat-no" title="function not covered" >function(howManyPlayers){</span>
+<span class="cstat-no" title="statement not covered" >    return howManyPlayers &gt;= 2;</span>
+  };
+&nbsp;
+  this.add = function(playerName){
+    players.push(playerName);
+    places[this.howManyPlayers() - 1] = 0;
+    purses[this.howManyPlayers() - 1] = 0;
+    inPenaltyBox[this.howManyPlayers() - 1] = false;
+&nbsp;
+    console.log(playerName + " was added");
+    console.log("They are player number " + players.length);
+&nbsp;
+    return true;
+  };
+&nbsp;
+  this.howManyPlayers = function(){
+    return players.length;
+  };
+&nbsp;
+&nbsp;
+  let askQuestion = function(){
+    if(currentCategory() == 'Pop')
+      console.log(popQuestions.shift());
+    if(currentCategory() == 'Science')
+      console.log(scienceQuestions.shift());
+    <span class="missing-if-branch" title="if path not taken" >I</span>if(currentCategory() == 'Sports')
+<span class="cstat-no" title="statement not covered" >      console.log(sportsQuestions.shift());</span>
+    if(currentCategory() == 'Rock')
+      console.log(rockQuestions.shift());
+  };
+&nbsp;
+  this.roll = function(roll){
+    console.log(players[currentPlayer] + " is the current player");
+    console.log("They have rolled a " + roll);
+&nbsp;
+    if(inPenaltyBox[currentPlayer]){
+      if(roll % 2 != 0){
+        isGettingOutOfPenaltyBox = true;
+&nbsp;
+        console.log(players[currentPlayer] + " is getting out of the penalty box");
+        places[currentPlayer] = places[currentPlayer] + roll;
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(places[currentPlayer] &gt; 11){
+<span class="cstat-no" title="statement not covered" >          places[currentPlayer] = places[currentPlayer] - 12;</span>
+        }
+&nbsp;
+        console.log(players[currentPlayer] + "'s new location is " + places[currentPlayer]);
+        console.log("The category is " + currentCategory());
+        askQuestion();
+      }else{
+        console.log(players[currentPlayer] + " is not getting out of the penalty box");
+        isGettingOutOfPenaltyBox = false;
+      }
+    }else{
+&nbsp;
+      places[currentPlayer] = places[currentPlayer] + roll;
+      if(places[currentPlayer] &gt; 1){
+        places[currentPlayer] = places[currentPlayer] - 12;
+      }
+&nbsp;
+      console.log(players[currentPlayer] + "'s new location is " + places[currentPlayer]);
+      console.log("The category is " + currentCategory());
+      askQuestion();
+    }
+  };
+&nbsp;
+  this.wasCorrectlyAnswered = function(){
+    if(inPenaltyBox[currentPlayer]){
+      if(isGettingOutOfPenaltyBox){
+        console.log('Answer was correct!!!!');
+        purses[currentPlayer] += 1;
+        console.log(players[currentPlayer] + " now has " +
+            purses[currentPlayer]  + " Gold Coins.");
+&nbsp;
+        let winner = didPlayerWin();
+        currentPlayer += 1;
+        if(currentPlayer == players.length)
+          currentPlayer = 0;
+&nbsp;
+        return winner;
+      }else{
+        currentPlayer += 1;
+        if(currentPlayer == players.length)
+          currentPlayer = 0;
+        return true;
+      }
+&nbsp;
+&nbsp;
+&nbsp;
+    }else{
+&nbsp;
+      console.log("Answer was correct!!!!");
+&nbsp;
+      purses[currentPlayer] += 1;
+      console.log(players[currentPlayer] + " now has " +
+          purses[currentPlayer]  + " Gold Coins.");
+&nbsp;
+      let winner = didPlayerWin();
+&nbsp;
+      currentPlayer += 1;
+      if(currentPlayer == players.length)
+        currentPlayer = 0;
+&nbsp;
+      return winner;
+    }
+  };
+&nbsp;
+  this.wrongAnswer = function(){
+    console.log('Question was incorrectly answered');
+    console.log(players[currentPlayer] + " was sent to the penalty box");
+    inPenaltyBox[currentPlayer] = true;
+&nbsp;
+    currentPlayer += 1;
+    if(currentPlayer == players.length)
+      currentPlayer = 0;
+    return true;
+  };
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Mar 15 2022 17:11:23 GMT+0100 (Central European Standard Time)
+</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>
