@@ -2223,4 +2223,3 @@ The category is Science
 Science Question 4
 Answer was correct!!!!
 Player 0 now has 6 Gold Coins.
-=============================================================================
